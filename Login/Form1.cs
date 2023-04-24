@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace login_system
 {
@@ -15,6 +16,10 @@ namespace login_system
         public Form1()
         {
             InitializeComponent();
+
+            OleDbConnection con = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0;Data Source=db_users.mdb");
+            OleDbCommand cmd = new OleDbCommand();
+            OleDbDataAdapter da = new OleDbDataAdapter();
         }
 
         private void Label3_Click(object sender, EventArgs e)
