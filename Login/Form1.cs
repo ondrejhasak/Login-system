@@ -36,7 +36,7 @@ namespace login_system
         {
             if (txtUsername.Text == "" && txtPassword.Text == "" && txtConPass.Text == "")
             {
-                MessageBox.Show("username and password fields are empty", "Registration failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Pole jsou prázdná", "Registrace se nepovedla", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (txtPassword.Text == txtConPass.Text)
             {
@@ -50,12 +50,12 @@ namespace login_system
                 txtPassword.Text = "";
                 txtConPass.Text = "";
                 
-                MessageBox.Show("Your Account has been succsefully created", "Registration success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Váš účet byl úspěšně vytvořen", "Registrace byla úspěšná", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else
             {
-                MessageBox.Show("Password does not match, please re-enter", "Registration failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Heslo se neshoduje, zadejte heslo znovu", "Registrace se nepovedla", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPassword.Text = "";
                 txtConPass.Text = "";
                 txtPassword.Focus();
@@ -87,7 +87,7 @@ namespace login_system
 
         private void Label6_Click(object sender, EventArgs e)
         {
-            new Form2druheokno().Show();
+            new Form2().Show();
             this.Hide();
         }
     }
