@@ -1,5 +1,5 @@
 # Login-system
 ## Cíl projektu
-Uživatel zadá jméno a heslo, pokud už bude existovat, konzole vypíše, že uživatel se přihlásil. Pokud ještě nebude existovat, uživatel bude zaregistrován.
+Uživateli se otevře okno s registrací. Uživatel si vytvoří účet a bude zaregistrován. Pokud už účet má, překlikne si na okno přihlášení a přihlásí se.
 ## Zvolené technologie
 Visual Studio, náročnost: střední, C#
